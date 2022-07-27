@@ -24,7 +24,7 @@ def login():
 		return render_template('login.html')
   
 
-@app.route('/home')
+@app.route('/home',methods=['GET','POST'])
 def home():
 	return render_template('home.html', friends=facebook_friends)
 
